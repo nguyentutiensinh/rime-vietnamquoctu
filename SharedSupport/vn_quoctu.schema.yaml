@@ -1,0 +1,467 @@
+#※  Rime schema
+#※  encoding: utf-8
+#
+
+schema:
+  schema_id: vn_quoctu
+  name: 越喃國字🇻🇳
+  version: "24.09.02"
+  author:
+    - 源慈先生  < @nguyentutiensinh|https://nguyentutiensinh.tumblr.com >
+  description: |
+    Việt Nam Quốc Tự 《越喃國字🇻🇳》 Bộ gõ Hán Nôm Telex - Quy Phủ Thư Quán
+    Chỉnh sửa bộ biên dịch dựa trên phần mềm mã nguồn mở RIME Method Keyboard
+    Dịch chữ quốc ngữ sang chữ nôm, sữ dụng thay thế bàn phím pinyin
+      * chenhe: https://chenhe.me
+      * rime wiki: https://github.com/rime/home/wiki
+      * rime ice: https://github.com/iDvel/rime-ice
+      * Từ điển Hán Nôm: https://hvdic.thivien.net/
+      * opencc - Mở chuyển đổi tiếng Trung
+
+#※  show_notifications_when: always  #※  options: always | never | appropriate
+style:                #todo: Tuỳ Biến Giao Diện [Font][preedit][candidate mode, cirection,event][Display]
+  #※ [Font]
+  font_face: 'SVN-Oriental Kaishu, SF Pro Rounded, SF Pro, Helvetica, CN-Khai, Chu-Nom-Khai, Han-Nom Kai, CN-Khai 3.0, Han-Nom Ming, FZXingKai-S04T, FZKai_U_P_P,Kaiti TC,STKaiti ,Kaiti SC, Minh Nguyen Medium'
+  font_point: 20
+  label_font_face: 'SVN-Oriental Kaishu, SF Pro Rounded, SF Pro, Helvetica, Roboto, Aria, Lato, sans-script'
+  label_font_point: 14
+  comment_font_face: 'SVN-Oriental Kaishu, SF Pro Rounded, SF Pro, Helvetica, Roboto, Aria, Lato, CN-Khai, Chu-Nom-Khai, Han-Nom Kai, CN-Khai 3.0, Han-Nom Ming, FZXingKai-S04T, FZKai_U_P_P,Kaiti TC,STKaiti ,Kaiti SC, Minh Nguyen Medium'
+  comment_font_point: 18
+  #※ [preedit]
+  inline_preedit: false                    #※ true:　input text direct in line  / false: input text show on field
+  preedit_type: composition                #※ Nội dung của khu vực chỉnh sửa trước：composition（mã biên）； preview（selected candidate）；preview_all（All candidates）
+  #※ [candidate mode]
+  inline_candidate: false                  #※ true: ouput translate show in line / false: ouput select in paging
+  fullscreen: false                        #※ Candidate window displays full screen：true；false
+  candidate_list_layout: stacked           #※ stacked | linear, ứng viên chồng lên nhau (từ trên xuống), ứng viên bên canh nhau(từ phải sang trái)
+  display_tray_icon: true                  #※ Khay hiển thị thêm các biểu tượng độc lập với thanh ngôn ngữ：true；false
+  # #※ [candidate Direction] horizontal
+  text_orientation: horizontal             #※ Hướng dòng văn bản，và hiệu quả `vertical_text` tương đồng：horizontal；vertical
+  #※ [candidate Direction] vertical
+  # horizontal: true                        #※ Các ứng viên được sắp xếp theo chiều ngang（tạicustom内和andidate_list_layout的linear效果一样）
+  # vertical: true                           #※ Các ứng viên được sắp xếp theo chiều dọc（tạicustom内和andidate_list_layout的linear效果一样）
+  # text_orientation: vertical             #※ Hướng dòng văn bản，và hiệu quả `vertical_text` tương đồng：horizontal；vertical
+  # vertical_text: true                     #※ văn bản dọc：true；false
+  #※ [candidate event]
+  # ascii_tip_follow_cursor: false           #※ Khi chuyển sang chế độ ASCII, dấu nhắc sẽ theo sau con chuột thay vì nhập con trỏ
+  enhanced_position: true                  #※ Khi không thể định vị được ô ứng viên, hộp ứng viên sẽ hiển thị ở góc trên bên trái của cửa sổ.：true；false
+  candidate_abbreviate_length: 30          #※ Các ứng cử viên được viết tắt và dấu chấm lửng sẽ được sử dụng thay thế nếu con số này vượt quá con số này. Đặt thành 0 để tắt tính năng này
+  mouse_hover_ms: 0                        #※ Thời gian phản hồi lựa chọn từ khi di chuột (ms), đặt thành 0 để tắt chức năng này
+  paging_on_scroll: true                   #※ Hành vi trượt bánh xe qua cửa sổ ứng viên：true（Lật trang）；false （Chọn ứng viên tiếp theo）
+  click_to_capture: false                  #※ Nhấp chuột vào ứng viên để tạo ảnh chụp màn hình: true: false
+  #※ [Display]
+  candidate_format: '  [label]. [candidate] [comment] '  #※  %@ is automatically expanded to "[candidate] [comment]" and %c is replaced by "[label]" or "%c\u2005\u2005\u2005%@\u2005"
+  # antialias_mode: default                  #※ Cài đặt khử răng cưa Subpixel：default；force_dword；cleartype；grayscale；aliased
+  mutual_exclusive: true                   #※ màu trong suốt xếp chồng lên nhau
+  translucency: true                       #※ sử dụng nền mờ. Chỉ hiển thị khi màu nền trong suốt
+
+#todo: Tuỳ Biến Giao Diện
+  color_scheme: bachthu
+  color_scheme_dark: hongthu        #※ Darkmode
+
+preset_color_schemes: #todo: Tuỳ Biến Schemes
+#Phật Gia
+  annhien:                                   #※ Giá trị bảng màu được chỉ định trong `style/color_schema`
+    name: "安然/ An nhiên"                     #※ Tên màu được hiển thị trong cài đặt lược đồ
+    author: 源慈先生/Nguyên Từ tiên sinh        #※ tác giả
+    # color_space: display_p3 # Only available on macOS 10.12+
+    color_format: abgr（0xAABBGGRR)  argb                        #※ Color format：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr default）
+    #※ Config Style
+    corner_radius: 5                        #※ Frame Corner
+    hilited_corner_radius: 0                #※ Paging > Select Corner
+    border_height: -2                        #※ Frame margin Y
+    border_width: -2                         #※ border size
+    spacing: 10                             #※ Preedit vs Paging   (inline_preedit False)
+    line_spacing: 8                         #※ Khoảng cách giữa các ứng viên （candidate_list_layout: stacke）
+    shadow_size: 1                          #※ Một số lớn hơn 0 sẽ hiển thị bóng xung quanh ứng viên được chiếu sáng nhiều
+
+    #※ Global
+    # border_color: 0x0F0D9B #9B0D0F                   #※ Frame border (All)
+    #※ Preedit
+    text_color: 0x373A3E #3e3a37                     #※ Preedit text (no highlight) cursor
+    hilited_text_color: 0x4950C8 #c85049             #※ Preedit text (highlight)
+    preedit_back_color: 0x7599BBD3 #75D3BB99        #※ Preedit background
+    # hilited_back_color: 0xF099BBD3 #F0D3BB99         #※ Preedit background (highlight) => Transparentcy
+    #※ Paging
+    back_color:  0xB3C5DEEA #B3eadec5                    #※ Paging background
+    hilited_candidate_back_color: 0xC5DEEA #eadec5   #※ Paging background (highlight)
+
+    candidate_text_color: 0x373A3E #3e3a37           #※ Paging > ouput text (no highlight)
+    hilited_candidate_text_color:  0x4950C8 #c85049  #※ Paging > ouput text (highlight)
+
+    label_color: 0x86A1B6 #b6a186                    #※ Paging > Label text (no highlight)
+    hilited_candidate_label_color: 0x567ABD #bd7a56  #※ Paging > Label text (highlight)
+
+    comment_text_color: 0x4B6B8B #8b6b4b             #※ Paging > Comment text (no highlight)
+    hilited_comment_text_color: 0x2C3E61 #613e2c     #※ Paging > Comment text (highlight)
+  nausong:                                   #※ Giá trị bảng màu được chỉ định trong `style/color_schema`
+    name: "榄椶 / Nâu Sồng"                     #※ Tên màu được hiển thị trong cài đặt lược đồ
+    author: 源慈先生/Nguyên Từ tiên sinh        #※ tác giả
+    # color_space: display_p3 # Only available on macOS 10.12+
+    color_format: abgr（0xAABBGGRR)  argb                        #※ Color format：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr default）
+    #※ Config Style
+    corner_radius: 5                        #※ Frame Corner
+    hilited_corner_radius: 0                #※ Paging > Select Corner
+    border_height: -2                        #※ Frame margin Y
+    border_width: -2                         #※ border size
+    spacing: 10                             #※ Preedit vs Paging   (inline_preedit False)
+    line_spacing: 8                         #※ Khoảng cách giữa các ứng viên （candidate_list_layout: stacke）
+    shadow_size: 1                          #※ Một số lớn hơn 0 sẽ hiển thị bóng xung quanh ứng viên được chiếu sáng nhiều
+
+    #※ Global
+    # border_color: 0x0F0D9B #9B0D0F                   #※ Frame border (All)
+    #※ Preedit
+    text_color: 0x567ABD #bd7a56                     #※ Preedit text (no highlight) cursor
+    hilited_text_color: 0x45A1FF #ffa145             #※ Preedit text (highlight)
+    preedit_back_color: 0x75222A37 #75372a22        #※ Preedit background
+    # hilited_back_color: 0xF0222A37 #F0372a22        #※ Preedit background (highlight) => Transparentcy
+    #※ Paging
+    back_color:  0xF0222A37 #F0372a22                    #※ Paging background
+    hilited_candidate_back_color: 0x28354F #4f3528   #※ Paging background (highlight)
+
+    candidate_text_color: 0x8AABE0 #e0ab8a           #※ Paging > ouput text (no highlight)
+    hilited_candidate_text_color:  0x45A1FF #ffa145  #※ Paging > ouput text (highlight)
+
+    label_color: 0x2C3E61 #613e2c                    #※ Paging > Label text (no highlight)
+    hilited_candidate_label_color: 0x567ABD #bd7a56  #※ Paging > Label text (highlight)
+
+    comment_text_color: 0x425E92 #925e42             #※ Paging > Comment text (no highlight)
+    hilited_comment_text_color: 0x567ABD #bd7a56     #※ Paging > Comment text (highlight)
+
+#Nho Gia
+  bachthu:                                   #※ Giá trị bảng màu được chỉ định trong `style/color_schema`
+    name: "白書/ Bạch Thư"                     #※ Tên màu được hiển thị trong cài đặt lược đồ
+    author: 源慈先生/Nguyên Từ tiên sinh        #※ tác giả
+    # color_space: display_p3 # Only available on macOS 10.12+
+    color_format: abgr（0xAABBGGRR)  argb                        #※ Color format：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr default）
+    #※ Config Style
+    corner_radius: 1                        #※ Frame Corner
+    hilited_corner_radius: 1                #※ Paging > Select Corner
+    border_height: 4                        #※ Frame margin Y
+    border_width: 4                         #※ border size
+    spacing: 10                             #※ Preedit vs Paging   (inline_preedit False)
+    line_spacing: 8                         #※ Khoảng cách giữa các ứng viên （candidate_list_layout: stacke）
+    shadow_size: 1                          #※ Một số lớn hơn 0 sẽ hiển thị bóng xung quanh ứng viên được chiếu sáng nhiều
+
+    #※ Global
+    border_color: 0x0F0D9B #9B0D0F                   #※ Frame border (All)
+    #※ Preedit
+    text_color: 0x000000 #000000                     #※ Preedit text (no highlight) cursor
+    hilited_text_color: 0x0F0D9B #9B0D0F             #※ Preedit text (highlight)
+    preedit_back_color: 0x7599BBD3 #75D3BB99        #※ Preedit background
+    # hilited_back_color: 0xF099BBD3 #F0D3BB99         #※ Preedit background (highlight) => Transparentcy
+    #※ Paging
+    back_color:  0xB099BBD3 #B0D3BB99                #※ Paging background
+    hilited_candidate_back_color: 0xF078A0BC #F0BCA078   #※ Paging background (highlight)
+
+    candidate_text_color: 0x000000 #000000           #※ Paging > ouput text (no highlight)
+    hilited_candidate_text_color:  0x0F0D9B #9B0D0F  #※ Paging > ouput text (highlight)
+
+    label_color: 0x465E6E #6E5E46                    #※ Paging > Label text (no highlight)
+    hilited_candidate_label_color: 0x465E6E #6E5E46  #※ Paging > Label text (highlight)
+
+    comment_text_color: 0x40505C #5c5040             #※ Paging > Comment text (no highlight)
+    hilited_comment_text_color: 0x000000 #000000     #※ Paging > Comment text (highlight)
+  hongthu:                                   #※ Giá trị bảng màu được chỉ định trong `style/color_schema`
+    name: "紅書/ Hồng Thư"                     #※ Tên màu được hiển thị trong cài đặt lược đồ
+    author: 源慈先生/Nguyên Từ tiên sinh        #※ tác giả
+    # color_space: display_p3 # Only available on macOS 10.12+
+    color_format: abgr（0xAABBGGRR)  argb                        #※ Color format：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr default）
+    #※ Config Style
+    corner_radius: 1                        #※ Frame Corner
+    hilited_corner_radius: 1                #※ Paging > Select Corner
+    border_height: 4                        #※ Frame margin Y
+    border_width: 4                         #※ border size
+    spacing: 10                             #※ Preedit vs Paging   (inline_preedit False)
+    line_spacing: 8                         #※ Khoảng cách giữa các ứng viên （candidate_list_layout: stacke）
+    shadow_size: 0                          #※ Một số lớn hơn 0 sẽ hiển thị bóng xung quanh ứng viên được chiếu sáng nhiều
+    #※ Global
+    border_color: 0x78AED6 #d6ae78                   #※ Frame border (All)
+
+    #※ Preedit
+    text_color: 0x517F9C #9c7f51                     #※ Preedit text (no highlight) cursor
+    hilited_text_color: 0x78AED6 #d6ae78             #※ Preedit text (highlight)
+    preedit_back_color: 0x1A2679 #79261a            #※ Preedit background
+    # hilited_back_color: 0xF099BBD3 #F0D3BB99         #※ Preedit background (highlight) => Transparentcy
+
+    #※ Paging
+    #※ Paging [Background]
+    back_color:  0x202F95 #952f20                #※ Paging background
+    hilited_candidate_back_color: 0x78AED6 #d6ae78   #※ Paging background (highlight)
+    #※ Paging [output]
+    candidate_text_color: 0x87C4F1 #f1c487          #※ Paging > ouput text (no highlight)
+    hilited_candidate_text_color:  0x0F0D9B #9B0D0F  #※ Paging > ouput text (highlight)
+    #※ Paging [lable]
+    label_color: 0x6DAAD1 #d1aa6d                   #※ Paging > Label text (no highlight)
+    hilited_candidate_label_color: 0x475E6F #6f5e47  #※ Paging > Label text (highlight)
+    #※ Paging [comment]
+    comment_text_color: 0x6DAAD1 #d1aa6d             #※ Paging > Comment text (no highlight)
+    hilited_comment_text_color: 0x000000 #000000     #※ Paging > Comment text (highlight)
+
+#Đạo Gia
+  maoson:                                   #※ Giá trị bảng màu được chỉ định trong `style/color_schema`
+    name: "旄山/Mao Sơn"                     #※ Tên màu được hiển thị trong cài đặt lược đồ
+    author: 源慈先生/Nguyên Từ tiên sinh        #※ tác giả
+    # color_space: display_p3 # Only available on macOS 10.12+
+    color_format: abgr（0xAABBGGRR)  argb                        #※ Color format：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr default）
+    #※ Config Style
+    corner_radius: 1                        #※ Frame Corner
+    hilited_corner_radius: 1                #※ Paging > Select Corner
+    border_height: 4                        #※ Frame margin Y
+    border_width: 4                         #※ border size
+    spacing: 10                             #※ Preedit vs Paging   (inline_preedit False)
+    line_spacing: 8                         #※ Khoảng cách giữa các ứng viên （candidate_list_layout: stacke）
+    shadow_size: 1                          #※ Một số lớn hơn 0 sẽ hiển thị bóng xung quanh ứng viên được chiếu sáng nhiều
+
+    #※ Global
+    border_color: 0x252399 #992325                   #※ Frame border (All)
+    #※ Preedit
+    text_color: 0x1018AD #ad1810                    #※ Preedit text (no highlight) cursor
+    hilited_text_color: 0x000000 #000000            #※ Preedit text (highlight)
+    preedit_back_color: 0xEE34C7FF #EEffc734        #※ Preedit background
+    # hilited_back_color: 0xF099BBD3 #F0D3BB99         #※ Preedit background (highlight) => Transparentcy
+    #※ Paging
+    back_color:  0xF034C7FF #F0ffc734                #※ Paging background
+    hilited_candidate_back_color: 0x32AFF0 #f0af32   #※ Paging background (highlight)
+
+    candidate_text_color: 0x000000 #000000           #※ Paging > ouput text (no highlight)
+    hilited_candidate_text_color:  0x1018AD #ad1810  #※ Paging > ouput text (highlight)
+
+    label_color: 0x175DA5 #a55d17                    #※ Paging > Label text (no highlight)
+    hilited_candidate_label_color: 0x14388B #8b3814  #※ Paging > Label text (highlight)
+
+    comment_text_color: 0x1757A5 #a55717             #※ Paging > Comment text (no highlight)
+    hilited_comment_text_color: 0x0B2769 #69270b     #※ Paging > Comment text (highlight)
+  toanchan:                                   #※ Giá trị bảng màu được chỉ định trong `style/color_schema`
+    name: "全真/ Toàn Chân"                     #※ Tên màu được hiển thị trong cài đặt lược đồ
+    author: 源慈先生/Nguyên Từ tiên sinh        #※ tác giả
+    # color_space: display_p3 # Only available on macOS 10.12+
+    color_format: abgr（0xAABBGGRR)  argb                        #※ Color format：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr default）
+    #※ Config Style
+    corner_radius: 1                        #※ Frame Corner
+    hilited_corner_radius: 1                #※ Paging > Select Corner
+    border_height: 4                        #※ Frame margin Y
+    border_width: 4                         #※ border size
+    spacing: 10                             #※ Preedit vs Paging   (inline_preedit False)
+    line_spacing: 8                         #※ Khoảng cách giữa các ứng viên （candidate_list_layout: stacke）
+    shadow_size: 0                          #※ Một số lớn hơn 0 sẽ hiển thị bóng xung quanh ứng viên được chiếu sáng nhiều
+
+    #※ Global
+    border_color: 0x8BB2CA #cab28b                  #※ Frame border (All)
+    #※ Preedit
+    text_color: 0x517F9C #9c7f51                     #※ Preedit text (no highlight) cursor
+    hilited_text_color: 0x8BB2CA #cab28b              #※ Preedit text (highlight)
+    preedit_back_color: 0xCC58381F #CC1f3858            #※ Preedit background
+    # hilited_back_color: 0xF099BBD3 #F0D3BB99         #※ Preedit background (highlight) => Transparentcy
+    #※ Paging
+    #※ Paging [Background]
+    back_color:  0xEE58381F #EE1f3858                   #※ Paging background
+    hilited_candidate_back_color: 0x8BB2CA #cab28b  #※ Paging background (highlight)
+    #※ Paging [output]
+    candidate_text_color: 0x78A9C9 #c9a978         #※ Paging > ouput text (no highlight)
+    hilited_candidate_text_color:  0x1018AD #ad1810  #※ Paging > ouput text (highlight)
+    #※ Paging [lable]
+    label_color: 0x8BB2CA #cab28b                  #※ Paging > Label text (no highlight)
+    hilited_candidate_label_color: 0x58381F #1f3858 #※ Paging > Label text (highlight)
+    #※ Paging [comment]
+    comment_text_color: 0x64879E #9e8764             #※ Paging > Comment text (no highlight)
+    hilited_comment_text_color: 0x000000 #000000     #※ Paging > Comment text (highlight)
+
+#Mẫu Gia
+  bachlien:                                   #※ Giá trị bảng màu được chỉ định trong `style/color_schema`
+    name: "白蓮/Bạch Liên"                     #※ Tên màu được hiển thị trong cài đặt lược đồ
+    author: 源慈先生/Nguyên Từ tiên sinh        #※ tác giả
+    # color_space: display_p3 # Only available on macOS 10.12+
+    color_format: abgr（0xAABBGGRR)  argb                        #※ Color format：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr default）
+    #※ Config Style
+    corner_radius: 1                        #※ Frame Corner
+    hilited_corner_radius: 1                #※ Paging > Select Corner
+    border_height: 4                        #※ Frame margin Y
+    border_width: 4                         #※ border size
+    spacing: 10                             #※ Preedit vs Paging   (inline_preedit False)
+    line_spacing: 8                         #※ Khoảng cách giữa các ứng viên （candidate_list_layout: stacke）
+    shadow_size: 1                          #※ Một số lớn hơn 0 sẽ hiển thị bóng xung quanh ứng viên được chiếu sáng nhiều
+
+    #※ Global
+    border_color: 0x394013 #134039                   #※ Frame border (All)
+    #※ Preedit
+    text_color: 0x5E6920 #20695e                     #※ Preedit text (no highlight) cursor
+    hilited_text_color: 0x394013 #134039             #※ Preedit text (highlight)
+    preedit_back_color: 0x75DCF3F2 #75f2f3dc        #※ Preedit background
+    # hilited_back_color:                             #※ Preedit background (highlight) => Transparentcy
+    #※ Paging
+    back_color:  0xB0DCF3F2 #B0Df2f3dc                #※ Paging background
+    hilited_candidate_back_color: 0x4DD0F2E2 #4De2f2d0   #※ Paging background (highlight)
+
+    candidate_text_color: 0x394013 #134039          #※ Paging > ouput text (no highlight)
+    hilited_candidate_text_color:  0x0A20B3 #b3200a  #※ Paging > ouput text (highlight)
+
+    label_color: 0x888E6A #6a8e88                     #※ Paging > Label text (no highlight)
+    hilited_candidate_label_color: 0x888E6A #6a8e88   #※ Paging > Label text (highlight)
+
+    comment_text_color: 0x888E6A #6a8e88             #※ Paging > Comment text (no highlight)
+    hilited_comment_text_color: 0x394013 #134039    #※ Paging > Comment text (highlight)
+  kimlien:                                   #※ Giá trị bảng màu được chỉ định trong `style/color_schema`
+    name: "金蓮/ Kim Liên"                     #※ Tên màu được hiển thị trong cài đặt lược đồ
+    author: 源慈先生/Nguyên Từ tiên sinh        #※ tác giả
+    # color_space: display_p3 # Only available on macOS 10.12+
+    color_format: abgr（0xAABBGGRR)  argb                        #※ Color format：argb（0xaarrggbb）；rgba（0xrrggbbaa）；abgr（0xaabbggrr default）
+    #※ Config Style
+    corner_radius: 1                        #※ Frame Corner
+    hilited_corner_radius: 1                #※ Paging > Select Corner
+    border_height: 4                        #※ Frame margin Y
+    border_width: 4                         #※ border size
+    spacing: 10                             #※ Preedit vs Paging   (inline_preedit False)
+    line_spacing: 8                         #※ Khoảng cách giữa các ứng viên （candidate_list_layout: stacke）
+    shadow_size: 0                          #※ Một số lớn hơn 0 sẽ hiển thị bóng xung quanh ứng viên được chiếu sáng nhiều
+    #※ Global
+    border_color: 0x87DFFA #fadf87                   #※ Frame border (All)
+    #※ Preedit
+    text_color: 0x87DFFA #fadf87                     #※ Preedit text (no highlight) cursor
+    hilited_text_color: 0x87DFFA #fadf87             #※ Preedit text (highlight)
+    preedit_back_color: 0x24270E #0e2724            #※ Preedit background
+    # hilited_back_color: 0xF099BBD3 #F0D3BB99         #※ Preedit background (highlight) => Transparentcy
+
+    #※ Paging
+    #※ Paging [Background]
+    back_color:  0x24270E #0e2724                 #※ Paging background
+    hilited_candidate_back_color: 0x394013 #134039   #※ Paging background (highlight)
+    #※ Paging [output]
+    candidate_text_color: 0x71B0C9 #c9b071          #※ Paging > ouput text (no highlight)
+    hilited_candidate_text_color:  0x87DFFA #fadf87   #※ Paging > ouput text (highlight)
+    #※ Paging [lable]
+    label_color: 0x71B0C9 #c9b071                   #※ Paging > Label text (no highlight)
+    hilited_candidate_label_color: 0x71B0C9 #c9b071  #※ Paging > Label text (highlight)
+    #※ Paging [comment]
+    comment_text_color: 0x71B0C9 #c9b071             #※ Paging > Comment text (no highlight)
+    hilited_comment_text_color: 0x87DFFA #fadf87      #※ Paging > Comment text (highlight)
+
+menu:                 #todo: Menu option
+  page_size: 10            #※  row in 1 page 'menu'
+
+switcher:             #todo: Name switcher
+  caption: 􀍟 越喃國字🇻🇳
+
+switches:             #todo: Menu chuyển đổi nhập liệu ※  Shortcut " ⌃ + ` "
+  # - name: ascii_mode              #? Switch: input
+  #   reset: 0                      #※  Set default
+  #   states: [􀳧,􀅶]              #※  Shortcut "⌃ + 1",
+  - name: transcription           #? Switch: Phồn Thể sang giản thể
+    states: [􀧥,􀧣]               #※  Shortcut "⌃ + 2"
+    reset: 0                      #※  Set default
+  # - name: ascii_punct             #? Switch: Symbol.
+  #   states: [􀤘,􀃪]               #※  Shortcut "⌃ + 3"
+  #   reset: 0                      #※  Set default
+  - name: full_shape              #? Switch: Mono space, Fixed Width
+    states: [􀚓,􀾘]               #※  Shortcut "⌃ + 4"
+    reset: 0                      #※  Set default
+  - name: emoji_suggestion        #? Switch: Gợi ý emoji.
+    states: [􀥧,􀎸]               #※  Shortcut "⌃ + 5"
+    reset: 1                      #※  Set default
+  - name: chaifen                 #?  Bộ lọc tách
+    states: [􀯔,􀯕]              #※  Shortcut "⌃ + 6"
+    reset: 0                      #※  Set default
+
+engine:               #todo: Khai báo công cụ đầu vào
+  processors:          #todo: 1. Xử lý đầu vào
+    # - ascii_composer        #※  [switches]: ascii_mode
+    - recognizer            #※  Regex input -> matcher: Xử lý mã đầu vào đáp ứng các quy tắc cụ thể, chẳng hạn như URL, tìm kiếm ngược, v.v.
+    - key_binder            #※  Shortcut: Liên kết các phím với các phím khác trong các điều kiện cụ thể, chẳng hạn như xác định lại dấu phẩy và dấu chấm làm phím lật trang ứng viên
+    - speller               #※  input: type keyboard (no space)  -> return 'string'
+    - punctuator            #※  input: speller -> return: 'punct_segmentor' (Check)
+    - selector              #※  [1..9] menu select by number; [fn+(↓|↑) / 'Page_Up','Page_Down'],  next, prev page 'menu'
+    - navigator             #※  [← →] move 'speller'
+    - express_editor        #※  input: speller -> return: 'abc_segmentor' (Check)
+    #※  - fluid_editor        #※  input: speller -> return: 'fallback_segmentor' (Check)
+  segmentors:         #todo: 2. Kiểm tra
+    # - ascii_segmentor             #※  Để đánh dấu một đoạn văn phương Tây (ví dụ: ở chế độ phương Tây), các chữ cái được in trực tiếp
+    - matcher                     #※  Regex: Xác định các đoạn văn đáp ứng các quy tắc cụ thể, chẳng hạn như URL, tìm kiếm ngược, v.v.
+    - abc_segmentor               #※  input: 'editor' (check: abc) -> return 'table_translator'
+    - punct_segmentor             #※  input: 'punctuator' (check: perfix, suffix) -> return 'punct_translator'
+    - fallback_segmentor          #※  input: 'editor' (check: string Unknown) -> return 'echo_translator'
+  translators:        #todo: 3. Dịch
+    - punct_translator                  #※  input: 'punct_segmentor' (find: punctuator_dict -> return: symbol in punctuation_table)-> (menu)
+    - echo_translator                   #※  input: 'fallback_segmentor' (if: not in dict -> return: full_string) -> ( menu)
+    - script_translator                 #※  Trình dịch tập lệnh cho các giải pháp nhập liệu dựa trên bảng âm tiết như Bính âm và Bính âm Quảng Đông #※  - Mục này có thể tải nhiều phiên bản, theo sau là @+tên người dịch [chẳng hạn như: bính âm, jyutping, v.v.]
+    - reverse_lookup_translator         #※  Trình tra cứu ngược, sử dụng lược đồ mã hóa khác để kiểm tra các bộ lọc mã:
+    - echo_translator                   #※  input: 'fallback_segmentor' (if: not in dict -> return: full_string) -> ( menu)
+    #※  - table_translator                #※  input: 'abc_segmentor' (find: dict -> return: string in dict)-> (menu)
+  filters:            #todo 4. Lọc kết quả dịch
+    - simplifier@transcription_cc              #※  Chuyển đổi Phồn thể / Giản Thể
+    - simplifier@emoji              #※ Emoji
+    - uniquifier                        #※  Lọc các từ ứng cử trùng lặp, có thể đến từ simplifier
+
+speller:              #todo: dict.[value] -> "string", string càng chi tiết, càng dễ nhận diện từ, (sửa lỗi tìm kiếm chính tả, đặt dấu, thứ tự nhập)
+  alphabet: abcdefghijklmnopqrstuvwxyz      #※  Bảng chữ cái, bao gồm các phím được sử dụng và nhấn. Tuy có trước sau, nhưng khi hình thành và nhấn, tất cả đều được sắp xếp theo thứ tự bảng chữ cái.
+  algebra:
+    __include: vn_quoctu.telex:/algebra
+translator:           #todo: Dịch đầu vào, đầu ra
+  dictionary: vn_quoctu               #※ name dict (hello.dict.yaml)
+  spelling_hints: 10              #※ Đặt số lượng từ trong vòng bao nhiêu từ để hoàn thành chỉnh âm (chỉ script_translator hoạt động)
+  enable_encoder: true            #※ Cho phép tạo từ tự động
+  enable_sentence: true           #※ Bật tính năng nhập câu tự động
+  enable_user_dict: true          #※ Kích hoạt từ điển người dùng
+  encode_commit_history: true     #※ Tự động mã hóa các từ đã có trên màn hình để cải thiện tỷ lệ trúng của lần nhập tiếp theo
+  always_show_comments: true      #※ Luôn hiện comment paging [chỉ script_translator hoạt động]
+  preedit_format:   #todo: input -> 'string' (search: [speller]) if (string.input = dict.[value]) => show comment
+    __include: vn_quoctu.telex:/preedit_format
+  comment_format:   #todo: 'speller'ouput -> 'text' -> show on 'paging'
+    __include: vn_quoctu.telex:/comment_format
+
+reverse_lookup:       #todo: tra cứu ngược
+  dictionary: cangjie5
+  prefix: "`"
+  suffix: "'"
+  tips: 〔倉頡〕
+  preedit_format:
+    - "xlit|abcdefghijklmnopqrstuvwxyz|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
+  comment_format:
+    __include: vn_quoctu.telex:/comment_format
+transcription_cc:     #todo: Phồn -> Giản
+  option_name: transcription                    #※ Tương ứng 'switches' Các tên mục chuyển đổi được đặt trong,Với 'key_binder/binding' tên được sử dụng trong
+  opencc_config:  t2s.json                      #※ rime_dir/opencc/ => t2s.json/t2tw.json/t2hk.jsons2t.json
+  tips: all                                     #※ all: Hiển thị tất cả | char: Chỉ hiển thị các ký tự đơn | none: Không hiển thị
+  comment_format:
+    __include: vn_quoctu.telex:/comment_format
+
+emoji_suggestion:     #todo: Gợi ý Emoji
+  opencc_config: emoji.json
+  option_name: emoji_suggestion
+  tips: all
+  inherit_comment: false
+
+chaifen_cc:           #todo: Bộ lọc phụ trợ tách ký tự
+  opencc_config: fly_Chaifen.json
+  option_name: chaifen
+  tips: char
+  show_in_comment: true
+  comment_format:
+    __include: vn_quoctu.telex:/comment_format
+
+recognizer:           #todo: Regex input
+  patterns:
+    punct: '^/([0-9]0?|[A-Za-z!-\/]+)$'
+    reverse_lookup: "`[a-z]*'?$"
+
+key_binder:           #todo: Shortcut
+  bindings:
+    __patch:
+      - vn_quoctu.bindings:/emacs_editing
+      - vn_quoctu.bindings:/move_by_word_with_tab
+      - vn_quoctu.bindings:/paging_with_comma_period
+      - vn_quoctu.bindings:/numbered_mode_switch
+
+# ascii_composer:     #todo: Shortcut: ascii_composer
+#   good_old_caps_lock: true
+#   switch_key:
+#     Shift_L: noop
+#     Shift_R: noop
+#     Control_L: noop
+#     Control_R: noop
+#     Caps_Lock: clear
+#     Eisu_toggle: clear
+
+
+punctuator:           #todo: Symbols
+  import_preset: vn_quoctu.symbols #※  symbols /default / punctuation.yaml
+

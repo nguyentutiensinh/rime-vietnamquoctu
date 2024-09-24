@@ -1,0 +1,169 @@
+paging_with_comma_period:
+  __append:
+    - { when: paging, accept: comma, send: Page_Up }
+    - { when: has_menu, accept: period, send: Page_Down }
+
+numbered_mode_switch:
+  __append:
+    # - { when: always, accept: Control+1, toggle: ascii_mode }
+    - { when: always, accept: Control+1, toggle: transcription }
+    # - { when: always, accept: Control+3, toggle: ascii_punct }
+    - { when: always, accept: Control+2, toggle: full_shape }
+    - { when: always, accept: Control+3, toggle: emoji_suggestion }
+    - { when: always, accept: Control+4, toggle: chaifen }
+emacs_editing:
+  __append:
+    - { when: composing, accept: Control+p, send: Up }
+    - { when: composing, accept: Control+n, send: Down }
+    - { when: composing, accept: Control+b, send: Left }
+    - { when: composing, accept: Control+f, send: Right }
+    - { when: composing, accept: Control+a, send: Home }
+    - { when: composing, accept: Control+e, send: End }
+    - { when: composing, accept: Control+d, send: Delete }
+    - { when: composing, accept: Control+k, send: Shift+Delete }
+    - { when: composing, accept: Control+h, send: BackSpace }
+    - { when: composing, accept: Control+g, send: Escape }
+    - { when: composing, accept: Control+bracketleft, send: Escape }
+    - { when: composing, accept: Control+y, send: Page_Up }
+    - { when: composing, accept: Alt+v, send: Page_Up }
+    - { when: composing, accept: Control+v, send: Page_Down }
+
+move_by_word_with_tab:
+  __append:
+    - { when: composing, accept: ISO_Left_Tab, send: Shift+Left }
+    - { when: composing, accept: Shift+Tab, send: Shift+Left }
+    - { when: composing, accept: Tab, send: Shift+Right }
+
+
+
+# 4. key_binder：# cấp dưới： bindings：Đặt phím tắt chức năng
+#   。mọi mục binding Bao gồm：
+
+# {
+#   when: {
+#     paging,     # Used for translation
+#     has_menu,   # For operation candidates
+#     composing,  # For operation input code
+#     always      # All areas
+#   },
+#   accept: keyboard,
+#   {
+#     send: "Nút đầu ra",
+#     toggle: "công tắc bật tắt",
+#     send_sequence: "Xuất ra một chuỗi các phím",
+#     set_option: "Bật công tắc chọn nhiều mục",
+#     unset_option: "Tắt công tắc chọn nhiều mục",
+#     select: "Chọn từ ứng cử viên"
+
+#   }
+# }
+# BackSpace                           Phím lùi
+# Tab                                 định vị ngang
+# Linefeed                            dòng mới
+# Clear                               Thông thoáng
+# Return                              Đi vào
+# Pause                               tạm dừng
+# Sys_Req                             in ấn màn hình
+# Escape                              từ bỏ
+# Delete                              xóa bỏ
+# Home                                tại chỗ
+# Left                                mũi tên trái
+# Up                                  mũi tên lên
+# Right                               mũi tên phải
+# Down                                mũi tên xuống
+# Prior,Page_Up                       Xuất hiện
+# Next,Page_Down                      Từ chối
+# End                                 Vị trí cuối cùng
+# Begin                               vị trí bắt đầu
+# Shift_L                             左Shift
+# Shift_R                             右Shift
+# Control_L                           左Ctrl
+# Control_R                           右Ctrl
+# Meta_L                              左Meta
+# Meta_R                              右Meta
+# Alt_L                               左Alt
+# Alt_R                               右Alt
+# Super_L                             Command
+# Super_R                             Command
+# Hyper_L                             左Hyper
+# Hyper_R                             右Hyper
+# Caps_Lock                           khóa mũ
+# Shift_Lock                          Khóa bánh răng trên
+# Scroll_Lock                         khóa cuộn
+# Num_Lock                            Khóa bàn phím
+# Select                              Lựa chọn
+# Print                               In
+# Execute                             thực hiện
+# Insert                              chèn
+# Undo                                sự giảm bớt
+# Redo                                Làm lại
+# Menu                                thực đơn
+# Find                                tìm kiếm
+# Cancel                              Hủy bỏ
+# Help                                giúp đỡ
+# Break                               ngắt
+# space
+# exclam                              !
+# quotedbl                            "
+# numbersign                          #
+# dollar                              $
+# percent                             %
+# ampersand                           &
+# apostrophe                          '
+# parenleft                           (
+# parenright                          )
+# asterisk                            *
+# plus                                +
+# comma                               ,
+# minus                               -
+# period                              .
+# slash                               /
+# colon                               :
+# semicolon                           ;
+# less                                <
+# equal                               =
+# greater                             >
+# question                            ?
+# at                                  @
+# bracketleft                         [
+# backslash
+# bracketright                        ]
+# asciicircum                         ^
+# underscore                          _
+# grave                               `
+# braceleft                           {
+# bar                                 |
+# braceright                          }
+# asciitilde                          ~
+
+
+# KP_Space                            Không gian bàn phím
+# KP_Tab                              Định vị ngang bàn phím
+# KP_Enter                            Nhập bàn phím
+# KP_Delete                           Xóa bàn phím
+# KP_Home                             Bàn phím nhỏ tại chỗ
+# KP_Left                             Bàn phím mũi tên trái
+# KP_Up                               Mũi tên trên bàn phím
+# KP_Right                            Bàn phím mũi tên phải
+# KP_Down                             Mũi tên xuống bàn phím
+# KP_Prior,KP_Page_Up                 Bàn phím nhỏ lật lên
+# KP_Next,KP_Page_Down                Lật bàn phím xuống
+# KP_End                              Vị trí cuối cùng của bàn phím
+# KP_Begin                            Vị trí ban đầu của bàn phím
+# KP_Insert                           Bàn phím chèn
+# KP_Equal                            Bàn phím bằng
+# KP_Multiply                         Dấu nhân bàn phím
+# KP_Add                              Dấu cộng bàn phím
+# KP_Subtract                         Dấu trừ bàn phím
+# KP_Divide                           Biển báo chia bàn phím nhỏ
+# KP_Decimal                          bàn phím dấu thập phân
+# KP_0                                Bàn phím 0
+# KP_1                                Bàn phím 1
+# KP_2                                Bàn phím 2
+# KP_3                                Bàn phím 3
+# KP_4                                Bàn phím 4
+# KP_5                                Bàn phím 5
+# KP_6                                Bàn phím 6
+# KP_7                                Bàn phím 7
+# KP_8                                Bàn phím 8
+# KP_9                                Bàn phím 9

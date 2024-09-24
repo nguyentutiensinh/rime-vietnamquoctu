@@ -1,0 +1,558 @@
+# Rime dictionary
+# encoding: utf-8
+#
+#
+#
+
+---
+name: symbol.emoji
+version: "24.09.02"
+sort: by_weight         # Xếp từ theo độ phổ biến
+
+
+
+#Kí tự khoảng cách riêng trong phần giải nghĩa:[ ]
+#ASCII: &#8197;
+#UNICODE: \u2005
+
+
+#Chú ý không viết comment ở bất kì đâu bắt đầu từ dòng 20
+#(Chữ Hán) Tab (Giải nghĩa) Tab (Độ phổ biến)
+...
+🇪🇬	ai cập
+🇮🇳	ấn độ
+🏴󠁧󠁢󠁥󠁮󠁧󠁿	anh
+🇬🇧	anh quốc
+🇬🇧	vương quốc anh
+🇦🇹	áo
+🇵🇱	ba lan
+🇧🇪	bỉ
+🇵🇹	bồ đào nha
+🇦🇪	các tiểu vương quốc a rập thống nhất
+🇨🇮	bờ biển ngà
+🇰🇷	đại hàn dân quốc
+🇰🇷	hàn quốc
+🇩🇰	đan mạch
+🇩🇪	đức
+🇬🇶	ghi nê xích đạo
+🇳🇱	hà lan
+🇺🇸	hoa kì
+🇺🇸	mĩ
+🇬🇷	hy lạp
+🇮🇹	ý
+🇱🇦	lào
+🇲🇲	miến điện
+🇲🇳	mông cổ
+🇳🇴	na uy
+🇿🇦	nam phi
+🇷🇺	nga
+🇯🇵	nhật bản
+🇦🇺	úc
+🇫🇮	phần lan
+🇫🇷	pháp
+🇨🇿	séc
+🇨🇾	síp
+🇪🇸	tây ban nha
+🇹🇭	thái lan
+🇹🇷	thổ nhĩ kì
+🇸🇪	thụy điển
+🇨🇭	thụy sĩ
+🇹🇱	đông ti mo
+🇰🇵	triều tiên
+🇨🇳	trung hoa
+🇨🇳	trung quốc
+🇨🇫	trung phi
+🇨🇽	giáng sinh
+🇭🇰	hương cảng
+🇮🇴	lãnh thổ ấn độ dương thuộc anh
+🇲🇴	áo môn
+🇹🇼	đài loan
+🇺🇲	các tiểu đảo xa của hoa kì
+🇺🇳	liên hiệp quốc
+🇻🇳	việt nam
+🇸🇦	ả rập xê út
+🇧🇦	bô xơ ni a và héc dê gô vi na
+🇧🇷	bơ ra xin
+🇧🇳	bơ ru nây
+🇰🇿	ca dắc xơ tan
+🇰🇭	cam bu chia
+🇨🇬	công gô bra da vi le
+🇨🇷	cốt xơ ta ri ca
+🇭🇷	cơ rô a ti a
+🇰🇬	cư rơ gư dơ xơ tan
+🇪🇹	ê ti ô bi a
+🇪🇪	e xơ tô ni a
+🇬🇪	gơ ru di a
+🇬🇾	gai a na
+🇮🇱	i xơ ra en
+🇲🇬	ma đa gát xơ ca
+🇫🇲	mai cơ rô nê xi a
+🇳🇵	nê ban
+🇦🇺	ô xơ tơ rây li a
+🇵🇰	ba ki xơ tan
+🇵🇼	ba lau
+🇵🇸	ba le xơ tin
+🇵🇦	ba na ma
+🇵🇬	ba bua niu ghi nê
+🇵🇾	ba ra quay
+🇵🇪	bê ru
+🇵🇭	phi líp bin
+🇹🇩	tchad
+🇹🇯	tát gi ki xơ tan
+🇹🇱	ti mo le xơ te
+🇹🇲	tuộc mê ni xơ tan
+🇺🇦	u cơ rai na
+🇺🇾	u ru quay
+🇻🇨	xanh vin xen và gơ rê na din
+🇸🇹	xao tô mê và bơ rin xi pê
+🇸🇬	xinh ga bo
+🇸🇰	xơ lô va ki a
+🇸🇮	xơ lô ven ni a
+🇱🇰	xơ ri lan ca
+🇬🇫	quy an thuộc pháp
+🇬🇮	gi bơ ran ta
+🇬🇱	gơ rơn len
+🇬🇸	nam giôc và nam xăng ích
+🇭🇲	hếch và mác đô nan
+🇲🇶	mác ti ních
+🇵🇲	xan bi e và mích lon
+🇵🇳	bít kê en
+🇵🇷	bu éc tô ri cô
+🇸🇯	xơ van bác và i an mai en
+🇹🇦	tri xơ tan đa cu nha
+🏴󠁧󠁢󠁳󠁣󠁴󠁿	xơ cốt len
+🇦🇷	ác hen ti na
+🇦🇲	ác mê ni a
+🇦🇿	a déc bai gian
+🇮🇪	ai len
+🇮🇸	ai xơ len
+🇦🇱	an ba ni
+🇦🇩	an đô ra
+🇦🇴	ăng gô la
+🇩🇿	an giê ri
+🇦🇫	áp ga ni xtan
+🇸🇦	a rập xê út
+🇧🇧	bác ba đốt
+🇧🇩	băng la đét
+🇧🇭	ba ranh
+🇧🇾	bê la rút
+🇧🇿	bê li xê
+🇧🇯	bê nanh
+🇧🇴	bô li vi a
+🇧🇼	bốt xoa na
+🇧🇦	bô xni a và héc dê gô vi na
+🇧🇷	bra xin
+🇧🇳	bru nây
+🇧🇬	bun ga ri
+🇧🇫	buốc ki na pha xô
+🇧🇮	bu run đi
+🇧🇹	bu tan
+🇰🇿	ca dắc xtan
+🇨🇲	ca mơ run
+🇰🇭	cam pu chia
+🇨🇦	ca na đa
+🇨🇻	ca bô ve đê
+🇶🇦	ca ta
+🇨🇱	chi lê
+🇨🇴	cô lôm bi a
+🇨🇩	dân chủ công gô
+🇨🇩	công gô kin sa xa
+🇨🇬	công gô bơ ra da vi le
+🇨🇬	công gô
+🇨🇬	cộng hòa công gô
+🇰🇼	cô oét
+🇨🇮	cốt đi voa
+🇨🇷	cốt xta ri ca
+🇭🇷	crô a ti a
+🇨🇺	cu ba
+🇰🇬	cư rơ gư dơ xtan
+🇿🇲	dăm bi a
+🇿🇼	dim ba bu ê
+🇩🇴	đô mi ni ca na
+🇪🇨	ê cu a đo
+🇸🇻	en xan va đo
+🇪🇷	ê ri tơ rê a
+🇪🇹	ê ti ô pi a
+🇪🇪	e xtô ni a
+🇬🇦	ga bông
+🇬🇲	găm bi a
+🇬🇭	ga na
+🇬🇳	ghi nê
+🇬🇼	ghi nê bít xao
+🇯🇲	gia mai ca
+🇩🇯	gi bu ti
+🇬🇹	goa tê ma la
+🇬🇩	grê na đa
+🇬🇪	gru di a
+🇬🇾	guy a na
+🇭🇹	ha i ti
+🇯🇴	gióoc đa ni
+🇭🇺	hung ga ri
+🇮🇩	in đô nê xi a
+🇮🇶	i rắc
+🇮🇷	i ran
+🇮🇹	i ta li a
+🇮🇱	i xra en
+🇰🇪	kê ni a
+🇱🇻	lát vi a
+🇱🇸	lê xô thô
+🇱🇧	li băng
+🇱🇾	li bi
+🇱🇷	li bê ri a
+🇱🇮	lít ten xơ tên
+🇱🇹	lít va
+🇱🇺	lúc xăm bua
+🇲🇭	mác san
+🇲🇬	ma đa gát xca
+🇫🇲	mai crô nê xi a
+🇲🇾	ma lay xi a
+🇲🇱	ma li
+🇲🇻	man đi vơ
+🇲🇹	man ta
+🇲🇦	ma rốc
+🇲🇰	bắc ma xê đô ni a
+🇲🇽	mê hi cô
+🇲🇲	mi an ma
+🇲🇿	mô dăm bích
+🇲🇨	mô na cô
+🇲🇩	môn đô va
+🇲🇪	mông tê nê grô
+🇲🇷	mô ri ta ni
+🇲🇺	mô ri xơ
+🇳🇦	na mi bi a
+🇳🇷	nau ru
+🇳🇵	nê pan
+🇳🇮	ni ca ra goa
+🇳🇪	ni giê
+🇳🇬	ni giê ri a
+🇳🇿	niu di len
+🇴🇲	ô man
+🇭🇳	ôn đu rát
+🇦🇺	ô xtơ rây li a
+🇵🇰	pa ki xtan
+🇵🇼	pa lau
+🇵🇸	pa le xtin
+🇵🇦	pa na ma
+🇵🇬	pa pua niu ghi nê
+🇵🇾	pa ra goay
+🇵🇪	pê ru
+🇫🇯	phi gi
+🇵🇭	phi líp pin
+🇷🇼	ru an đa
+🇷🇴	ru ma ni
+🇸🇲	san ma ri nô
+🇹🇩	sát
+🇹🇿	tan da ni a
+🇹🇯	tát gi ki xtan
+🇹🇱	ti mo lex te
+🇹🇬	tô gô
+🇹🇲	tuốc mê ni xtan
+🇹🇳	tuy ni di
+🇺🇦	u crai na
+🇺🇿	u dơ bê ki xtan
+🇺🇬	u gan đa
+🇺🇾	u ru goay
+🇻🇺	va nu a tu
+🇻🇪	vê nê du ê la
+🇼🇸	xa moa
+🇻🇨	xanh vin xen và grê na din
+🇸🇹	xao tô mê và prin xi pê
+🇪🇭	xa ra uy
+🇸🇨	xây sen
+🇷🇸	xéc bi a
+🇸🇳	xê nê gan
+🇸🇱	xi ê ra lê ôn
+🇸🇬	xinh ga po
+🇸🇾	xi ri
+🇸🇧	xô lô mông
+🇸🇰	xlô va ki a
+🇸🇮	xlô ven ni a
+🇸🇴	xô ma li
+🇱🇰	xri lan ca
+🇸🇩	xu đăng
+🇸🇷	xu ri nam
+🇾🇪	y ê men
+🇦🇨	ét xen sần
+🇦🇬	an ti qua và ba bu đa
+🇦🇮	an qui la
+🇦🇶	nam cực
+🇦🇸	xa mo a thuộc mĩ
+🇦🇼	a ru ba
+🇦🇽	a len
+🇧🇱	xan ba de le mi
+🇧🇲	bơ mu đa
+🇧🇶	ca ri be thuộc hà lan
+🇧🇸	ba ha mat
+🇧🇻	bu ve
+🇨🇨	co cot
+🇨🇨	ki linh
+🇨🇰	cúc
+🇨🇵	cơ li bơ ton
+🇨🇼	cư ra xao
+🇩🇬	đi ê gô gác xi a
+🇩🇲	thịnh vượng chung đô mi ni ca
+🇪🇦	xu ta và me li la
+🇪🇺	liên minh châu âu
+🇪🇺	liên âu
+🇫🇰	phôn len
+🇫🇴	pha rô
+🇬🇫	guy an thuộc pháp
+🇬🇬	gư en xi
+🇬🇮	gi bran ta
+🇬🇱	grơn len
+🇬🇵	goa đê lốp
+🇬🇸	nam gioóc và nam xăng úych
+🇬🇺	gu am
+🇭🇰	hồng kông
+🇭🇲	héc và mác đô nan
+🇮🇨	ca na ri
+🇮🇲	man
+🇯🇪	giếc xi
+🇰🇮	ki ri ba ti
+🇰🇲	co mo rot
+🇰🇳	xan kít và ne vít
+🇰🇾	cay man
+🇱🇨	xan lu xi a
+🇲🇫	xan mác tin
+🇲🇴	ma cao
+🇲🇵	bắc ma ri a na
+🇲🇶	mác ti níc
+🇲🇸	môn xe rát
+🇲🇼	ma la uy
+🇳🇨	niu ca le đô ni a
+🇳🇫	nóc phon
+🇳🇺	niu ây
+🇵🇫	bo li ne xi a thuộc pháp
+🇵🇲	xan bi e và míc lon
+🇵🇳	pít kê en
+🇵🇷	pu éc tô ri cô
+🇷🇪	ri iu ni ân
+🇸🇭	xan he le na
+🇸🇯	xvan bác và i an mai en
+🇸🇸	nam xu đan
+🇸🇽	xin mác ten
+🇸🇿	e xoa ti ni
+🇹🇦	tri xtan đa cu nha
+🇹🇨	tuốc và cai cót
+🇹🇫	lãnh thổ phía nam thuộc pháp
+🇹🇰	to ke lao
+🇹🇴	ton ga
+🇹🇹	tri ni đát và to ba go
+🇹🇻	tu va lu
+🇻🇦	thành va ti can
+🇻🇬	vơ gin thuộc anh
+🇼🇫	oa lít và phu tu na
+🇽🇰	co xo vo
+🇾🇹	may ô tê
+🏴󠁧󠁢󠁳󠁣󠁴󠁿	xcốt len
+🏴󠁧󠁢󠁷󠁬󠁳󠁿	oe ơn
+🇦🇷	argentina
+🇦🇲	armenia
+🇦🇿	azerbaijan
+🇮🇪	ireland
+🇮🇸	iceland
+🇦🇱	albania
+🇦🇩	andorra
+🇦🇴	angola
+🇩🇿	algerie
+🇦🇫	afghanistan
+🇧🇧	barbados
+🇧🇩	bangladesh
+🇧🇭	bahrain
+🇧🇾	belarus
+🇧🇿	belize
+🇧🇯	benin
+🇧🇴	bolivia
+🇧🇼	botswana
+🇧🇦	bosnia và herzegovina
+🇧🇷	brasil
+🇧🇳	brunei
+🇧🇬	bulgaria
+🇧🇫	burkina faso
+🇧🇮	burundi
+🇧🇹	bhutan
+🇦🇪	uae
+🇰🇿	kazakhstan
+🇨🇲	cameroon
+🇨🇦	canada
+🇨🇻	cape verde
+🇨🇻	cabo verde
+🇶🇦	qatar
+🇨🇱	chile
+🇨🇴	colombia
+🇨🇩	dân chủ congo
+🇨🇩	congo kinshasa
+🇨🇬	congo brazzaville
+🇨🇬	cộng hòa congo
+🇰🇼	kuwait
+🇨🇮	cote divoire
+🇨🇷	costa rica
+🇭🇷	croatia
+🇰🇬	kyrgyzstan
+🇿🇲	zambia
+🇿🇼	zimbabwe
+🇩🇴	dominica
+🇪🇨	ecuador
+🇸🇻	el salvador
+🇪🇷	eritrea
+🇪🇹	ethiopia
+🇪🇪	estonia
+🇬🇦	gabon
+🇬🇲	gambia
+🇬🇭	ghana
+🇬🇳	guinea
+🇬🇼	guinea bissau
+🇬🇶	guinea xích đạo
+🇯🇲	jamaica
+🇩🇯	djibouti
+🇬🇹	guatemala
+🇬🇩	grenada
+🇬🇪	gruzia
+🇬🇾	guyana
+🇯🇴	jordan
+🇭🇺	hungary
+🇮🇩	indonesia
+🇮🇶	iraq
+🇮🇷	iran
+🇮🇱	israel
+🇰🇪	kenya
+🇱🇻	latvia
+🇱🇸	lesotho
+🇱🇧	liban
+🇱🇾	libya
+🇱🇷	liberia
+🇱🇮	liechtenstein
+🇱🇹	litva
+🇱🇺	luxembourg
+🇲🇭	marshall
+🇲🇬	madagascar
+🇫🇲	micronesia
+🇲🇾	malaysia
+🇲🇻	maldives
+🇲🇹	malta
+🇲🇦	maroc
+🇲🇰	bắc macedonia
+🇲🇽	mexico
+🇲🇲	myanmar
+🇲🇿	mozambique
+🇲🇨	monaco
+🇲🇩	moldova
+🇲🇪	montenegro
+🇲🇷	mauritania
+🇲🇺	mauritius
+🇳🇦	namibia
+🇳🇷	nauru
+🇳🇵	nepal
+🇳🇮	nicaragua
+🇳🇪	niger
+🇳🇬	nigeria
+🇳🇿	new zealand
+🇴🇲	oman
+🇭🇳	honduras
+🇦🇺	australia
+🇵🇰	pakistan
+🇵🇼	palau
+🇵🇸	palestine
+🇵🇦	panama
+🇵🇬	papua new guinea
+🇵🇾	paraguay
+🇵🇪	peru
+🇫🇯	fiji
+🇵🇭	philippines
+🇷🇼	rwanda
+🇷🇴	romania
+🇸🇲	san marino
+🇹🇩	chad
+🇨🇿	czech
+🇨🇾	cyprus
+🇹🇿	tanzania
+🇹🇯	tajikistan
+🇹🇱	timor leste
+🇹🇱	đông timor
+🇹🇬	togo
+🇹🇲	turkmenistan
+🇹🇳	tunisia
+🇺🇦	ukraina
+🇺🇿	uzbekistan
+🇺🇾	uruguay
+🇻🇪	venezuela
+🇼🇸	samoa
+🇻🇨	saint vincent và grenadines
+🇸🇹	sao tome và principe
+🇪🇭	sahrawi
+🇸🇨	seychelles
+🇷🇸	serbia
+🇸🇳	senegal
+🇸🇱	sierra leone
+🇸🇬	singapore
+🇸🇾	syria
+🇸🇧	solomon
+🇸🇰	slovakia
+🇸🇮	slovenia
+🇸🇴	somalia
+🇱🇰	sri lanka
+🇸🇩	sudan
+🇸🇷	suriname
+🇾🇪	yemen
+🇦🇨	ascension
+🇦🇬	antigua và barbuda
+🇦🇮	anguilla
+🇦🇸	samoa thuộc mĩ
+🇦🇽	aland
+🇧🇱	saint barthelemy
+🇧🇲	bermuda
+🇧🇸	bahamas
+🇧🇻	bouvet
+🇨🇨	cocos
+🇨🇨	keeling
+🇨🇰	cook
+🇨🇵	clipperton
+🇨🇼	curacao
+🇩🇬	diego garcia
+🇩🇲	thịnh vượng chung dominica
+🇪🇦	ceuta và melilla
+🇪🇺	eu
+🇫🇰	falkland
+🇫🇴	faroe
+🇬🇫	guyane thuộc pháp
+🇬🇬	guernsey
+🇬🇮	gibraltar
+🇬🇱	greenland
+🇬🇵	guadeloupe
+🇬🇸	nam georgia và nam sandwich
+🇭🇰	hongkong
+🇭🇲	heard và mcdonald
+🇮🇨	canary
+🇯🇪	jersey
+🇰🇲	comoros
+🇰🇳	saint kitts và nevis
+🇱🇨	saint lucia
+🇲🇫	saint martin
+🇲🇴	macau
+🇲🇶	martinique
+🇲🇸	montserrat
+🇲🇼	malawi
+🇳🇨	new caledonia
+🇳🇫	norfolk
+🇳🇺	niue
+🇵🇫	polynesia thuộc pháp
+🇵🇲	saint pierre và miquelon
+🇵🇳	pitcairn
+🇵🇷	puerto rico
+🇷🇪	reunion
+🇸🇭	saint helena
+🇸🇯	svalbard và jan mayen
+🇸🇸	nam sudan
+🇸🇽	sint maarten
+🇸🇿	eswatini
+🇹🇦	tristan da cunha
+🇹🇨	turks và caicos
+🇹🇰	tokelau
+🇹🇹	trinidad và tobago
+🇻🇬	virgin thuộc anh
+🇻🇮	virgin thuộc mĩ
+🇼🇫	wallis và futuna
+🇽🇰	kosovo
+🇾🇹	mayotte
+🏴󠁧󠁢󠁳󠁣󠁴󠁿	scotland
+🏴󠁧󠁢󠁷󠁬󠁳󠁿	wales

@@ -1,0 +1,18 @@
+# Rime dictionary
+# encoding: utf-8
+#
+
+---
+name: vn_quoctu                  # Lưu ý tên phải trùng khớp với tên file
+version: "2024.09.02"
+sort: by_weight         # Xếp từ theo độ phổ biến
+use_preset_vocabulary: true         # Bộ từ vựng định sẵn, đã thử chuyển qua true nhưng không có gì xảy ra, cân nhắc bỏ dòng này
+# max_phrase_length: 0              # Độ dài của cụm từ, 0 là không giới hạn
+# min_phrase_weight: 100            # Trọng số tối thiểu, 0 là không loại bỏ những từ có trọng số thấp nhất. Thay bằng số dương sẽ chỉ tìm từ có giá trị lớn hơn hoặc bằng
+import_tables:
+  - dicts/hv_tc.hvdic.thivien
+  - dicts/hv_tc.hsk
+  - dicts/hv_tc.hannom.001
+  - dicts/symbol.emoji
+  - dicts/number
+...

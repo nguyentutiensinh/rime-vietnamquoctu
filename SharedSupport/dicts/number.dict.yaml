@@ -1,0 +1,47 @@
+# Rime dictionary
+# encoding: utf-8
+#
+#
+#
+
+---
+name: number
+version: "24.09.02"
+sort: by_weight         # Xếp từ theo độ phổ biến
+
+
+
+#Kí tự khoảng cách riêng trong phần giải nghĩa:[ ]
+#ASCII: &#8197;
+#UNICODE: \u2005
+
+
+#Chú ý không viết comment ở bất kì đâu bắt đầu từ dòng 20
+#(Chữ Hán) Tab (Giải nghĩa) Tab (Độ phổ biến)
+...
+星期一	weekday
+一	mot
+二	hai
+三	ba
+四	bon
+五	nam
+六	sau
+七	bay
+八	tam
+九	chin
+〇	khong
+零	zero
+十	Muoi
+百	tram
+千	nghin
+萬	muoi nghin
+億	tram trieu
+年	nam
+月	thang
+日	ngay
+星	sao
+期	do
+時	gio
+分	nua
+秒	giay
+元	dong
