@@ -7,6 +7,7 @@ __build_info:
     key_bindings.custom: 0
     punctuation: 1746148548
     punctuation.custom: 0
+
 ascii_composer:
   good_old_caps_lock: true
   switch_key:

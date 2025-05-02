@@ -3,6 +3,7 @@ __build_info:
   timestamps:
     squirrel: 1746148548
     squirrel.custom: 0
+
 app_options:
   co.zeit.hyper:
     ascii_mode: true

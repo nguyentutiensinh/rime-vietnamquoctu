@@ -15,6 +15,7 @@ __build_info:
     vn_quoctu.symbols.custom: 0
     vn_quoctu.telex: 1746148548
     vn_quoctu.telex.custom: 0
+
 chineseLunarCalendar_translator: lunar
 corrector: "{comment}"
 corrector_filter:
