@@ -1,34 +1,23 @@
 # Rime default settings
 # encoding: utf-8
 
-config_version: '0.40'
+config_version: '0.41'
 
 schema_list:
   - schema: vn_quoctu
-  # - schema: number
-  # - schema: luna_pinyin_simp
-  # - schema: luna_pinyin_fluency
-  # - schema: bopomofo
-  # - schema: bopomofo_tw
-  # - schema: cangjie5
-  # - schema: stroke
-  # - schema: terra_pinyin
-
 switcher:
   caption: 􀍟 越喃國字🇻🇳
   hotkeys:
     - Control+grave
     - Control+Shift+grave
-    # - F4                              # Xung đột với các phím tắt JetBrains
+    # - F4                   # Xung đột với các phím tắt JetBrains
   save_options:
-    - full_shape
-    - ascii_punct
+    - full_shape            # Bảo lưu method toàn chiều rộng
+    - ascii_punct           # Bảo lưu method tiếng anh
+    - transcription         # Bảo lưu opion hán tự, phồn/giản
     - simplification
-    - extended_charset
-    - emoji_suggestion      # Giữ các ký tự tiếng Trung đơn giản và tùy chọn truyền thống
-    - zh_hant
-    - zh_hans
-    - zh_hant_tw
+    - emoji_suggestion
+
   fold_options: true        # Tùy chọn gấp để tiết kiệm không gian. Nên gấp true khi có nhiều gói và nên mở rộng sai nếu sử dụng một gói.
   abbreviate_options: true    # tùy chọn viết tắt
   option_list_separator: '・' # Dấu phân cách giữa các tùy chọn
@@ -53,16 +42,16 @@ key_binder:
 
 recognizer:
   patterns:
-    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
-    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    email: "^[A-Za-z][-_.0-9A-Za-z`']*@.*$"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z`']*$"
     url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
 
 ascii_composer:
-  good_old_caps_lock: true
+  # Define shortcut keys to switch to Western mode
   switch_key:
-    Shift_L: inline_ascii
-    Shift_R: commit_text
-    Control_L: noop
-    Control_R: noop
-    Caps_Lock: clear
-    Eisu_toggle: clear
+    Caps_Lock: noop  # Press Caps Lock to directly upload the screen
+    Control_L: noop  # Press the left Control key without doing anything
+    Control_R: noop  #Press the right Control key without doing anything
+    Shift_L: noop  # Press the left Shift key to directly upload the screen
+    Shift_R: noop  # Press the right Shift key to temporarily switch to Western mode
+  good_old_caps_lock: true  # How to enable the classic Caps Lock to enable Western mode

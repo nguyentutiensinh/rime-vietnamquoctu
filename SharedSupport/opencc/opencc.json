@@ -1,0 +1,27 @@
+{
+	"name": "OpenCC Suggestion",
+	"segmentation": {
+		"type": "mmseg",
+		"dict": {
+			"type": "text",
+			"file": "opencc_danhngon.txt"
+		}
+	},
+	"conversion_chain": [
+		{
+			"dict": {
+				"type": "group",
+				"dicts": [
+					{
+						"type": "text",
+						"file": "opencc_danhngon.txt"
+					},
+                    {
+                        "type": "text",
+                        "file": "spoken.txt"
+                    }
+				]
+			}
+		}
+	]
+}

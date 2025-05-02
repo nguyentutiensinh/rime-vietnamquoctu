@@ -1,0 +1,19 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: plum/full
+  args:
+  description: >-
+    Full installation, update
+install_files: >-
+  dicts/*.*
+  opencc/*.*
+  lua/*.*
+  lua/aux_code/*.*
+  default.yaml
+  squirrel.yaml
+  weasel.yaml
+  ibus_rime.yaml
+  key_bindings.yaml
+  punctuation.yaml
+  vn_quoctu*.yaml

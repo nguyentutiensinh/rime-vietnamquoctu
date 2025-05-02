@@ -1,0 +1,55 @@
+# Rime dictionary
+# encoding: utf-8
+#
+#
+#
+
+---
+name: vi_zht.number
+version: "24.09.02"
+columns:
+  - text
+  - code
+  - weight
+use_preset_vocabulary: true
+#Kí tự khoảng cách riêng trong phần giải nghĩa:[]
+#ASCII: &#8197;
+#UNICODE: \u2005
+
+
+#Chú ý không viết comment ở bất kì đâu bắt đầu từ dòng 20
+#(Chữ Hán) Tab (Giải nghĩa) Tab (Độ phổ biến)
+...
+一	một⚂〔yī〕
+二	hai⚂〔èr〕
+两	hai⚂〔liǎng〕
+三	ba⚂〔sān〕
+四	bốn⚂〔sì〕
+五	năm⚂〔wǔ〕
+六	sáu⚂〔lù〕
+七	bảy⚂〔qī〕
+八	tám⚂〔bā〕
+九	chín⚂〔jiǔ〕
+〇	không⚂〔líng〕
+零	linh⚂〔líng〕
+十	mười⚂〔shí〕
+百	trăm⚂〔bǎi〕
+千	ngàn⚂〔qiān〕
+千	nghìn⚂〔qiān〕
+萬	mười nghìn⚂〔wàn〕
+億	trăm nghìn⚂〔yì〕
+一	1⚃〔yī〕
+二	2⚃〔èr〕
+三	3⚃〔sān〕
+四	4⚃〔sì〕
+五	5⚃〔wǔ〕
+六	6⚃〔lù〕
+七	7⚃〔qī〕
+八	8⚃〔bā〕
+九	9⚃〔jiǔ〕
+〇	0⚃〔líng〕
+零	0⚃〔líng〕
+十	10⚃〔shí〕
+百	100⚃〔bǎi〕
+千	1000⚃〔qiān〕
+千	10000⚃〔wàn〕

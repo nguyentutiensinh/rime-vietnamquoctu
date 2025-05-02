@@ -5,12 +5,13 @@ paging_with_comma_period:
 
 numbered_mode_switch:
   __append:
-    # - { when: always, accept: Control+1, toggle: ascii_mode }
-    - { when: always, accept: Control+1, toggle: transcription }
-    # - { when: always, accept: Control+3, toggle: ascii_punct }
-    - { when: always, accept: Control+2, toggle: full_shape }
-    - { when: always, accept: Control+3, toggle: emoji_suggestion }
-    - { when: always, accept: Control+4, toggle: chaifen }
+    - { when: always, accept: Control+1, toggle: ascii_mode }
+    - { when: always, accept: Control+2, toggle: transcription }
+    - { when: always, accept: Control+3, toggle: ascii_punct }
+    - { when: always, accept: Control+4, toggle: full_shape }
+    - { when: always, accept: Control+5, toggle: emoji_suggestion }
+    - { when: always, accept: Control+6, toggle: opencc_suggestion }
+    - { when: always, accept: Control+7, toggle: extended_charset } # Switch the expansion character
 emacs_editing:
   __append:
     - { when: composing, accept: Control+p, send: Up }
@@ -33,7 +34,6 @@ move_by_word_with_tab:
     - { when: composing, accept: ISO_Left_Tab, send: Shift+Left }
     - { when: composing, accept: Shift+Tab, send: Shift+Left }
     - { when: composing, accept: Tab, send: Shift+Right }
-
 
 
 # 4. key_binder：# cấp dưới： bindings：Đặt phím tắt chức năng

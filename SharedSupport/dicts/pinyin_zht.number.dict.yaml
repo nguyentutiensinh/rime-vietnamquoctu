@@ -1,0 +1,49 @@
+# Rime dictionary
+# encoding: utf-8
+#
+#
+#
+
+---
+name: pinyin_zht.number
+version: "24.09.02"
+columns:
+  - text
+  - code
+  - weight
+use_preset_vocabulary: true
+
+...
+一	yi⚂〈Một〉
+二	er⚂〈Hai〉
+两	liang⚂〈hai〉
+三	san⚂〈Ba〉
+四	si⚂〈Bốn〉
+五	wu⚂〈Năm〉
+六	lu⚂〈Sáu〉
+七	qi⚂〈Bảy〉
+八	ba⚂〈Tám〉
+九	jiu⚂〈Chín〉
+〇	ling⚂〈Không〉
+零	ling⚂〈Linh〉
+十	shi⚂〈Mười〉
+百	bai⚂〈Trăm〉
+千	qian⚂〈Ngàn〉
+千	qian⚂〈Nghìn〉
+萬	wan⚂〈Mười Nghìn〉
+億	yi⚂〈Trăm Nghìn〉
+一	yi⚃〈1〉
+二	er⚃〈2〉
+三	san⚃〈3〉
+四	si⚃〈4〉
+五	wu⚃〈5〉
+六	lu⚃〈6〉
+七	qi⚃〈7〉
+八	ba⚃〈8〉
+九	jiu⚃〈9〉
+〇	ling⚃〈0〉
+零	ling⚃〈0〉
+十	shi⚃〈10〉
+百	bai⚃〈100〉
+千	qian⚃〈1000〉
+萬	wan⚃〈10000〉
