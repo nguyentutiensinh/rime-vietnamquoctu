@@ -46,7 +46,8 @@ style:                #todo: Tuỳ Biến Giao Diện [Font][preedit][candidate 
   paging_on_scroll: true                   #※ Hành vi trượt bánh xe qua cửa sổ ứng viên：true（Lật trang）；false （Chọn ứng viên tiếp theo）
   click_to_capture: false                  #※ Nhấp chuột vào ứng viên để tạo ảnh chụp màn hình: true: false
   #※ [Display]
-  candidate_format: '  [label]. [candidate] [comment] '  #※  %@ is automatically expanded to "[candidate] [comment]" and %c is replaced by "[label]" or "%c\u2005\u2005\u2005%@\u2005"
+  candidate_format: '%c. %@'
+  # candidate_format: '  [label]. [candidate] [comment] '  #※  %@ is automatically expanded to "[candidate] [comment]" and %c is replaced by "[label]" or "%c\u2005\u2005\u2005%@\u2005"
   # antialias_mode: default                  #※ Cài đặt khử răng cưa Subpixel：default；force_dword；cleartype；grayscale；aliased
   mutual_exclusive: true                   #※ màu trong suốt xếp chồng lên nhau
   translucency: true                       #※ sử dụng nền mờ. Chỉ hiển thị khi màu nền trong suốt
