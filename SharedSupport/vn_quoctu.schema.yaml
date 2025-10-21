@@ -33,7 +33,7 @@ switches:             #todo: Menu chuyển đổi nhập liệu ※  Shortcut " 
     states: [􀧥,􀧣]               #※  Shortcut "⌃ + 2"
     reset: 0                      #※  Set default
   - name: ascii_punct             #? Switch: Symbol.
-    states: [􀤘,􀃪]               #※  Shortcut "⌃ + 3"
+    states: [􀌮,􁂪]               #※  Shortcut "⌃ + 3"
     reset: 0                      #※  Set default
   - name: full_shape              #? Switch: Mono space, Fixed Width
     states: [􀚓,􀾘]               #※  Shortcut "⌃ + 4"
