@@ -1,13 +1,52 @@
 #!/bin/bash
 
+
+while true; do
+  read -sp "🔐 Nhập mật khẩu cài đặt: " PASSWORD
+  echo ""
+  
+  if [[ "$PASSWORD" == "VN1975" ]]; then
+    echo "✅ Mật khẩu đúng, tiếp tục thực thi..."
+    break
+  else
+    echo "❌ Mật khẩu sai!"
+    echo "1️⃣ Nhập lại"
+    echo "2️⃣ Thoát chương trình"
+    read -p "👉 Chọn (1 hoặc 2): " CHOICE
+    
+    if [[ "$CHOICE" == "2" ]]; then
+      echo "👋 Đã thoát chương trình."
+      exit 1
+    fi
+  fi
+done
+
+# Kiểm tra trạng thái SIP
+statusSIP=$(csrutil status)
+
+if [[ "$statusSIP" == *"enabled"* ]]; then
+  echo "❌ System Integrity Protection (SIP) đang bật."
+  echo ""
+  echo "👉 Để tắt SIP, bạn cần thực hiện các bước sau:"
+  echo "1. Khởi động lại máy vào Recovery Mode"
+  echo "   Mac(Intel) giữ Command (⌘) + R"
+  echo "   Mac(Silicon) giữ Power 7s."
+  echo "2. Mở Terminal trong Recovery (Utilities > Terminal)."
+  echo "3. Nhập lệnh sau để tắt SIP:"
+  echo "   csrutil disable"
+  echo "4. Khởi động lại máy để áp dụng thay đổi."
+  echo ""
+  echo "⚠️ Lưu ý: Tắt SIP có thể ảnh hưởng đến bảo mật hệ thống. Chỉ nên thực hiện nếu bạn biết rõ lý do."
+
+  echo ""
+  read -p "Nhấn Enter để thoát..."
+  exit 1
+else
+  echo "✅ SIP đã được tắt."
+fi
+
 # Kiểm tra xem Homebrew đã được cài đặt chưa, nếu chưa thì cài đặt
 
-read -sp "Nhập mật khẩu cài đặt: " PASSWORD
-if [[ "$PASSWORD" != "VN1975" ]]; then
-    echo "❌ Mật khẩu sai!"
-    exit 1
-fi
-echo "✅ Mật khẩu đúng, tiếp tục thực thi..."
 if ! command -v brew >/dev/null 2>&1; then
     echo "⚠️ Homebrew chưa được cài đặt. Đang tiến hành cài đặt..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" || {
@@ -110,14 +149,16 @@ if [[ ! -d "$SQUIRREL_PATH" ]]; then
         
     fi
 else
-    echo "echo "📂 Squirrel đã được cài tại: $SQUIRREL_PATH""
+    echo "📂 Squirrel đã được cài tại: $SQUIRREL_PATH"
 fi
 if [[ -n "$TEMP" && -d "$TEMP" ]]; then
     echo "🧹 Clean Cache ..."
     sudo rm -rf "$TEMP"
     echo "✅ Clean done"
 fi
+
 # Clone rime-vietnamquoctu và thay thế SharedSupport
+SQUIRREL_PATH="/Library/Input Methods/Squirrel.app"
 echo "🔄 Đang cập nhật rime-vietnamquoctu..."
 sudo git -C "$SQUIRREL_PATH/Contents/" clone https://github.com/nguyentutiensinh/rime-vietnamquoctu.git
 sudo rm -rf "$SQUIRREL_PATH/Contents/SharedSupport"
